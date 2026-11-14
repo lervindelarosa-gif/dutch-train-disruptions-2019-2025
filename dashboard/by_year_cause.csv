@@ -1,0 +1,63 @@
+year,cause_group,disruptions,hours
+2019,infrastructure,1383,3129
+2019,rolling stock,2967,3055
+2019,accidents,588,1492
+2019,engineering work,175,601
+2019,logistical,218,508
+2019,external,506,448
+2019,weather,61,186
+2019,staff,17,164
+2019,unknown,25,9
+2020,infrastructure,979,3250
+2020,logistical,232,1842
+2020,rolling stock,2044,1659
+2020,engineering work,155,1211
+2020,accidents,529,1090
+2020,external,445,459
+2020,weather,45,180
+2020,unknown,21,12
+2021,infrastructure,1090,3422
+2021,rolling stock,2176,2855
+2021,external,567,1430
+2021,weather,66,1213
+2021,accidents,515,1139
+2021,logistical,255,1078
+2021,engineering work,176,676
+2021,staff,13,257
+2021,unknown,16,11
+2022,infrastructure,1176,4189
+2022,staff,246,3509
+2022,rolling stock,2108,3373
+2022,accidents,632,2053
+2022,logistical,245,1707
+2022,engineering work,228,902
+2022,external,781,578
+2022,weather,45,481
+2022,unknown,38,34
+2023,staff,329,8426
+2023,infrastructure,1177,4476
+2023,rolling stock,1923,3202
+2023,engineering work,202,2663
+2023,logistical,232,1417
+2023,accidents,539,1070
+2023,external,631,646
+2023,weather,58,256
+2023,unknown,77,90
+2024,infrastructure,1394,4546
+2024,rolling stock,2309,3507
+2024,staff,268,2524
+2024,accidents,580,1146
+2024,engineering work,142,1034
+2024,logistical,187,794
+2024,external,804,757
+2024,weather,26,610
+2024,unknown,252,262
+2025,infrastructure,1576,5150
+2025,rolling stock,2951,4427
+2025,staff,201,3989
+2025,logistical,135,1258
+2025,engineering work,149,1136
+2025,accidents,443,1096
+2025,external,866,1053
+2025,unknown,304,353
+2025,weather,51,147

@@ -1,0 +1,43 @@
+{
+  "name": "Train Delays",
+  "dataColors": [
+    "#1D3557",
+    "#2A9D8F",
+    "#E9A23B",
+    "#D1495B",
+    "#6A994E",
+    "#457B9D",
+    "#8D6A9F",
+    "#B5B5B5",
+    "#A8DADC",
+    "#F4A261"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#1D3557",
+  "tableAccent": "#1D3557",
+  "textClasses": {
+    "title": { "fontFace": "Segoe UI Semibold", "fontSize": 14, "color": "#1D3557" },
+    "header": { "fontFace": "Segoe UI Semibold", "fontSize": 12, "color": "#1D3557" },
+    "label": { "fontFace": "Segoe UI", "fontSize": 10, "color": "#4A5568" },
+    "callout": { "fontFace": "Segoe UI Semibold", "fontSize": 28, "color": "#1D3557" }
+  },
+  "visualStyles": {
+    "page": {
+      "*": {
+        "background": [ { "color": { "solid": { "color": "#F3F5F8" } }, "transparency": 0 } ]
+      }
+    },
+    "*": {
+      "*": {
+        "background": [ { "show": true, "color": { "solid": { "color": "#FFFFFF" } }, "transparency": 0 } ],
+        "border": [ { "show": true, "color": { "solid": { "color": "#E2E8F0" } }, "radius": 8 } ]
+      }
+    },
+    "textbox": {
+      "*": {
+        "background": [ { "show": false } ],
+        "border": [ { "show": false } ]
+      }
+    }
+  }
+}
