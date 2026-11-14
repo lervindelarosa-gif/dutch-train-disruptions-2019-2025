@@ -2,7 +2,7 @@
 
 Power BI dashboard and SQL analysis of **38,571 disruptions** on the Dutch railway network between 2019 and 2025: how much time is lost, what causes it, and when it happens.
 
-![Dashboard](dashboard/dashboard.jpg)
+![Dashboard](dashboard/dashboard.png)
 
 📄 **[Full report as PDF](dashboard/train-delays-dashboard.pdf)** (dashboard + key findings)
 
