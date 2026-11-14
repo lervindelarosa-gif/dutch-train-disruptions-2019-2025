@@ -8,8 +8,8 @@ Power BI dashboard and SQL analysis of **38,571 disruptions** on the Dutch railw
 
 ## Key findings
 
-1. **Disruptions are getting longer, not just more frequent.**
-   The number of disruptions grew 12% (5,940 in 2019 → 6,676 in 2025), but the hours lost almost doubled (9,592 → 18,610). The average disruption went from 97 to 167 minutes.
+1. **Disruptions are getting longer, not just more frequent, mostly because of the worst cases.**
+   The number of disruptions grew 12% (5,940 in 2019 → 6,676 in 2025), but the hours lost almost doubled (9,592 → 18,610). The *typical* disruption is only a bit longer (median 40 → 51 minutes), while disruptions of **more than 8 hours went from 159 to 413 a year**. In most years the longest 5% of disruptions cause about half of all hours lost. Durations are very skewed, so this uses the median and counts of long disruptions instead of the mean or standard deviation.
 
 2. **2023 was the worst year, driven by staff-related causes.**
    Staff causes accounted for 8,426 hours in 2023 (38% of that year's hours), up from just 164 hours in 2019. That year the average disruption lasted 258 minutes.
