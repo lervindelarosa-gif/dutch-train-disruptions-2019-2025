@@ -20,6 +20,26 @@ Power BI dashboard and SQL analysis of **38,571 disruptions** on the Dutch railw
 4. **Disruptions follow the daily timetable, not the seasons.**
    80% start between 06:00 and 20:00, peaking in the late afternoon (15:00–18:00). Monthly totals vary little: April is the quietest month and June the busiest.
 
+## Part 2: Does the weather make it worse?
+
+I joined the disruptions per day with daily weather from KNMI station **De Bilt** (2,557 days, 2019–2025) and compared a normal day with days of extreme weather. I used medians, because one very long disruption can make a single day's total look huge.
+
+| Weather at De Bilt | Days | Disruptions on a typical day | vs normal day | Hours lost on a typical day |
+|---|---|---|---|---|
+| Normal day | 2,434 | 14 | – | 23 |
+| Heavy rain (20 mm or more) | 40 | 18 | **+29%** | 39 |
+| Storm gusts (72 km/h or more) | 57 | 19 | **+36%** | 36 |
+| **Hard frost (−5 °C or colder)** | 33 | **22** | **+57%** | **53** |
+
+- **On a normal day, the weather barely matters.** The correlation between weather and disruptions per day is about zero.
+- **Extreme weather does matter, and frost the most:** frozen switches and ice on the overhead wires.
+- **Leaf fall (herfstblad) is real but small.** Slippery-rail disruptions cluster in October–November, but those months have only 4% more disruptions per day than the rest of the year.
+- **Storm days stand out:** 9 Feb 2020 (25 m/s gusts, 38 disruptions) and 2 Nov 2023 (23 m/s gusts, 59 disruptions), against 14 on a normal day.
+
+Limitations: weather from one station in the middle of the country, so a storm on the coast can be stronger than De Bilt measured. On the windiest day (18 Feb 2022, 31 m/s gusts) there were only 4 disruptions, probably because trains were stopped in advance, which the data does not record as disruptions.
+
+Script: `analysis/weather_vs_disruptions.py` · Daily data: `dashboard/by_day_weather.csv`
+
 ## How it was built
 
 | Step | Tool | Files |
@@ -28,6 +48,7 @@ Power BI dashboard and SQL analysis of **38,571 disruptions** on the Dutch railw
 | Explore with analysis questions | MySQL | `sql/02_questions.sql` |
 | Aggregate data for the dashboard | MySQL → CSV | `sql/04_dashboard_data.sql` → `dashboard/by_*.csv` |
 | Build the dashboard | Power BI Desktop | `dashboard/train-delays-dashboard.pbix` |
+| Compare with daily weather | Python (pandas) | `analysis/weather_vs_disruptions.py` → `dashboard/by_day_weather.csv` |
 
 **Power BI features used**
 - Data model with `by_year` as the hub table, related one-to-many to the other tables on `year`, so one year slicer filters every visual
@@ -45,5 +66,7 @@ Power BI dashboard and SQL analysis of **38,571 disruptions** on the Dutch railw
 ## Data
 
 [Rijden de Treinen](https://www.rijdendetreinen.nl) open data on train disruptions, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The raw yearly files are included in this repository (`disruptions-2019.csv` … `disruptions-2025.csv`).
+
+Weather: daily data for station De Bilt (260) from the [KNMI](https://www.knmi.nl) (Royal Netherlands Meteorological Institute). The raw file is not included; download `etmgeg_260.zip` from KNMI and unzip it into `weather/` to rerun the script.
 
 Note: the cause chart and cause figures leave out disruptions with no recorded cause.

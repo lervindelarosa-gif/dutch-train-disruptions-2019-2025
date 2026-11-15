@@ -1,3 +1,6 @@
+# Raw KNMI weather download (see README to get it)
+weather/
+
 # Backup files
 *_old_*.csv
 
