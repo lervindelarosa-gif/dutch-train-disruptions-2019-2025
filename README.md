@@ -22,6 +22,8 @@ Power BI dashboard and SQL analysis of **38,571 disruptions** on the Dutch railw
 
 ## Part 2: Does the weather make it worse?
 
+![Train disruptions on a typical day, by weather](dashboard/weather_chart.png)
+
 I joined the disruptions per day with daily weather from KNMI station **De Bilt** (2,557 days, 2019–2025) and compared a normal day with days of extreme weather. I used medians, because one very long disruption can make a single day's total look huge.
 
 | Weather at De Bilt | Days | Disruptions on a typical day | vs normal day | Hours lost on a typical day |
