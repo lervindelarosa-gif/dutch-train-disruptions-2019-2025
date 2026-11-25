@@ -46,6 +46,16 @@ I joined the disruptions per day with daily weather from KNMI station **De Bilt*
 - **Leaf fall (herfstblad) is real but small.** Slippery-rail disruptions cluster in October–November, but those months have only 4% more disruptions per day than the rest of the year.
 - **Storm days stand out:** 9 Feb 2020 (25 m/s gusts, 38 disruptions) and 2 Nov 2023 (23 m/s gusts, 59 disruptions).
 
+## Who could use this, and what I would recommend
+
+For a rail operator or the rail network manager, this analysis points to where the biggest gains are:
+
+1. **Focus on the very long disruptions.** Disruptions of more than 8 hours went up 2.6× and the longest 5% cause about half of all disruption time. Faster recovery from big incidents would save more time than preventing many small ones.
+2. **Start with infrastructure.** It is the largest cause over 2019–2025 (28,162 hours), ahead of broken trains and staff.
+3. **Prepare for frost.** Hard-frost days have 57% more disruptions than a normal day, so switch heating and extra repair crews on those days are worth planning for.
+4. **Plan cover for strikes and staff shortages.** These made 2023 the worst year, so back-up plans with regional operators help.
+5. **Add passenger numbers next.** This data shows how often trains are disrupted, not how many travellers are affected; adding passenger counts would show the real cost.
+
 ## How it works
 
 ```mermaid
